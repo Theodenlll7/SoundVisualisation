@@ -32,7 +32,7 @@ public class Visualizer : MonoBehaviour
             if (sampleCube != null)
             {
 
-                sampleCube[i].transform.localScale = new Vector3(1, (AudioP.samples[i]*maxScale) + 1, 1);
+                sampleCube[i].transform.localScale = new Vector3(0.5f, (AudioP.samples[i]*maxScale) + 1, 0.5f);
                 sampleCube[i].GetComponent<Renderer>().material.color = new Color(0, (AudioP.samples[i] * maxScale), 0);
             }
         }

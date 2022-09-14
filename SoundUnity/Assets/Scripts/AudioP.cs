@@ -11,6 +11,10 @@ public class AudioP : MonoBehaviour
     private AudioSource audioSource;
     public static float[] samples = new float[512];
     public static float[] freqBand = new float[8];
+    public static float[] bandbuffer = new float[8];
+    float[] bufferdecrase = new float[8];
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +27,7 @@ public class AudioP : MonoBehaviour
     {
         GetSpectrumAudioSource();
         MakeFrequencyBands();
+        BandBuffer();
     }
 
     void GetSpectrumAudioSource() 
@@ -45,6 +50,23 @@ public class AudioP : MonoBehaviour
             }
             average /= count;
             freqBand[i] = average * 10;
+        }
+    }
+
+    void BandBuffer()
+    {
+        for(int g= 0; g < 8; ++g)
+        {
+            if (freqBand[g] > bandbuffer[g])
+            {
+                bandbuffer[g] = freqBand[g];
+                bufferdecrase[g] = 0.005f;
+            }
+            if (freqBand[g] < bandbuffer[g])
+            {
+                bandbuffer[g] -= bufferdecrase[g];
+                bufferdecrase[g] *= 1.2f;
+            }
         }
     }
 }

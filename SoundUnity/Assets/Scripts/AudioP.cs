@@ -13,6 +13,7 @@ public class AudioP : MonoBehaviour
     public static float[] freqBand = new float[8];
     public static float[] bandbuffer = new float[8];
     float[] bufferdecrase = new float[8];
+    public float changeRate = .5f;
 
 
     // Start is called before the first frame update
@@ -27,7 +28,7 @@ public class AudioP : MonoBehaviour
     {
         GetSpectrumAudioSource();
         MakeFrequencyBands();
-        BandBuffer();
+        BandBuffer2();
     }
 
     void GetSpectrumAudioSource() 
@@ -55,18 +56,25 @@ public class AudioP : MonoBehaviour
 
     void BandBuffer()
     {
-        for(int g= 0; g < 8; ++g)
+        for(int i= 0; i < 8; ++i)
         {
-            if (freqBand[g] > bandbuffer[g])
+            if (freqBand[i] > bandbuffer[i])
             {
-                bandbuffer[g] = freqBand[g];
-                bufferdecrase[g] = 0.005f;
+                bandbuffer[i] = freqBand[i];
+                bufferdecrase[i] = 0.005f;
             }
-            if (freqBand[g] < bandbuffer[g])
+            if (freqBand[i] < bandbuffer[i])
             {
-                bandbuffer[g] -= bufferdecrase[g];
-                bufferdecrase[g] *= 1.2f;
+                bandbuffer[i] -= bufferdecrase[i];
+                bufferdecrase[i] = 1.2f;
             }
+        }
+    }
+    void BandBuffer2()
+    {
+        for (int i = 0; i < 8; ++i)
+        {
+            bandbuffer[i] = Mathf.Lerp(bandbuffer[i], samples[i], changeRate * Time.deltaTime);
         }
     }
 }

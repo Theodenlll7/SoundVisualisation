@@ -6,7 +6,7 @@ public class Visualizer : MonoBehaviour
 {
     public GameObject samplething;
     GameObject[] sampleCube = new GameObject[512];
-    public float maxScale;
+    public float scale;
 
     // Start is called before the first frame update
     void Start()
@@ -27,13 +27,12 @@ public class Visualizer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for(int i = 0; i < 512; i++)
+        for(uint i = 0; i < 512; i++)
         {
             if (sampleCube != null)
             {
-
-                sampleCube[i].transform.localScale = new Vector3(1, (AudioP.samples[i]*maxScale) + 1, 1);
-                sampleCube[i].GetComponent<Renderer>().material.color = new Color(0, (AudioP.samples[i] * maxScale), 0);
+                sampleCube[i].transform.localScale = new Vector3(1, scale * AudioP.samples[i] + 1, 1);
+                sampleCube[i].GetComponent<Renderer>().material.color = new Color(0, (AudioP.samples[i] * scale*1000), 0);
             }
         }
     }

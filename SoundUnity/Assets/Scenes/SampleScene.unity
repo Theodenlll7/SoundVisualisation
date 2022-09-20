@@ -325,7 +325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   samplething: {fileID: 1049323891669647369, guid: b1bb43ac1ecee2749a117a52e6233cd9, type: 3}
-  maxScale: 1000
+  scale: 10000
 --- !u!4 &283593883
 Transform:
   m_ObjectHideFlags: 0
@@ -1517,7 +1517,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

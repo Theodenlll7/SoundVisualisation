@@ -18,7 +18,7 @@ public class Visualizer : MonoBehaviour
             instanceSampleCube.transform.parent = this.transform;
             instanceSampleCube.name = "samplecube" + i;
             this.transform.eulerAngles = new Vector3(0, -0.703123f * i, 0);
-            instanceSampleCube.transform.position = Vector3.forward * 100;
+            instanceSampleCube.transform.position = Vector3.forward * 300;
             sampleCube[i] = instanceSampleCube;
         }
         
@@ -32,7 +32,7 @@ public class Visualizer : MonoBehaviour
             if (sampleCube != null)
             {
 
-                sampleCube[i].transform.localScale = new Vector3(0.5f, (AudioP.samples[i]*maxScale) + 1, 0.5f);
+                sampleCube[i].transform.localScale = new Vector3(1, (AudioP.samples[i]*maxScale) + 1, 1);
                 sampleCube[i].GetComponent<Renderer>().material.color = new Color(0, (AudioP.samples[i] * maxScale), 0);
             }
         }

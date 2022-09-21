@@ -38,6 +38,6 @@ Material:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _StartDensity: 10
-    - _sizeY: 0.3331517
+    - _sizeY: 0.3163068
     m_Colors: []
   m_BuildTextureStacks: []

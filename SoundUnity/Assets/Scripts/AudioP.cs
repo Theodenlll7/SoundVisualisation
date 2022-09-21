@@ -23,9 +23,9 @@ public class AudioP : MonoBehaviour
 
 
         string microphonename = Microphone.devices[0];
-        audioSource.clip = Microphone.Start(microphonename, true, 10, 44100);
+        //audioSource.clip = Microphone.Start(microphonename, true, 10, 44100);
         audioSource.loop = true;
-        while (!(Microphone.GetPosition(null) > 0)) { }
+        //while (!(Microphone.GetPosition(null) > 0)) { }
         audioSource.Play();
     }
 

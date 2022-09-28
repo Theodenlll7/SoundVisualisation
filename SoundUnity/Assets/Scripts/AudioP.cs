@@ -15,6 +15,11 @@ public class AudioP : MonoBehaviour
     float[] bufferdecrase = new float[8];
     public float changeRate = .5f;
 
+    //Light
+    float[] freqBandHighest = new float[8];
+    public static float[] audioBand = new float[8];
+    public static float[] audioBandbuffer = new float[8];
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,12 +40,28 @@ public class AudioP : MonoBehaviour
     {
         GetSpectrumAudioSource();
         MakeFrequencyBands();
-        BandBuffer2();
+        BandBuffer();
+        CreateAudioBands();
     }
 
     void GetSpectrumAudioSource() 
     {
         audioSource.GetSpectrumData(samples, 0, FFTWindow.Blackman);
+    }
+
+    //light
+    void CreateAudioBands()
+    {
+        for(int i =0; i<8; ++i)
+        {
+            if (freqBand[i] > freqBandHighest[i])
+            {
+                freqBandHighest[i] = freqBand[i];
+            }
+            audioBand[i] = (freqBand[i] / freqBandHighest[i]);
+            audioBandbuffer[i] = (bandbuffer[i] / freqBandHighest[i]);
+        }
+
     }
 
     void MakeFrequencyBands()
@@ -73,7 +94,7 @@ public class AudioP : MonoBehaviour
             if (freqBand[i] < bandbuffer[i])
             {
                 bandbuffer[i] -= bufferdecrase[i];
-                bufferdecrase[i] = 1.2f;
+                bufferdecrase[i] *= 1.2f;
             }
         }
     }

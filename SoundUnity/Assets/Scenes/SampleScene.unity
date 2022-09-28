@@ -147,7 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 2
   startScale: 15
-  scaleMuliplier: 2000
+  scaleMuliplier: 30
   useBuffer: 1
 --- !u!1001 &69141156
 PrefabInstance:
@@ -1025,7 +1025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 1
   startScale: 15
-  scaleMuliplier: 2000
+  scaleMuliplier: 30
   useBuffer: 1
 --- !u!1 &1262427987
 GameObject:
@@ -1083,7 +1083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 3
   startScale: 15
-  scaleMuliplier: 2000
+  scaleMuliplier: 30
   useBuffer: 1
 --- !u!1 &1444131013 stripped
 GameObject:
@@ -1109,7 +1109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 5
   startScale: 15
-  scaleMuliplier: 2000
+  scaleMuliplier: 30
   useBuffer: 1
 --- !u!1001 &1449415079
 PrefabInstance:
@@ -1471,7 +1471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 6
   startScale: 15
-  scaleMuliplier: 2000
+  scaleMuliplier: 30
   useBuffer: 1
 --- !u!1 &1633216984
 GameObject:
@@ -1910,7 +1910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 7
   startScale: 15
-  scaleMuliplier: 2000
+  scaleMuliplier: 30
   useBuffer: 1
 --- !u!1 &1798417513 stripped
 GameObject:
@@ -1936,7 +1936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 0
   startScale: 15
-  scaleMuliplier: 2000
+  scaleMuliplier: 30
   useBuffer: 1
 --- !u!1001 &1805779150
 PrefabInstance:
@@ -2035,7 +2035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 4
   startScale: 15
-  scaleMuliplier: 2000
+  scaleMuliplier: 30
   useBuffer: 1
 --- !u!1001 &1839286713
 PrefabInstance:

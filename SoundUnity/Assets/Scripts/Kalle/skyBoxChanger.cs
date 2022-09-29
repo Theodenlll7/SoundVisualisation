@@ -20,15 +20,19 @@ public class skyBoxChanger : MonoBehaviour
     void Update()
     {
         if (useBuffer) {
+            if (AudioP.bandbuffer[band] * scaleMuliplier >= 4) { mat.SetFloat("_sizeY",15); }
             mat.SetFloat("_sizeY", AudioP.bandbuffer[band] * scaleMuliplier);
            
             
         }
         else
         {
+            if (AudioP.bandbuffer[band] * scaleMuliplier >= 4) { mat.SetFloat("_sizeY", 15); }
+            else { 
             mat.SetFloat("_sizeY", AudioP.freqBand[band] * scaleMuliplier);
-            // mat.SetFloat("_sizeX,", AudioP.freqBand[band] * scaleMuliplier);
-          
+                // mat.SetFloat("_sizeX,", AudioP.freqBand[band] * scaleMuliplier);
+            }
+
         }
     }
 }

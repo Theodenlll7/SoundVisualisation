@@ -435,7 +435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 1
   startScale: 15
-  scaleMuliplier: 22
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1 &134886435 stripped
 GameObject:
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 2
   startScale: 15
-  scaleMuliplier: 22
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1001 &192414698
 PrefabInstance:
@@ -633,7 +633,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 3
   startScale: 15
-  scaleMuliplier: 40
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1 &318422125 stripped
 GameObject:
@@ -659,7 +659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 7
   startScale: 15
-  scaleMuliplier: 22
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1001 &340919522
 PrefabInstance:
@@ -758,7 +758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 5
   startScale: 15
-  scaleMuliplier: 22
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1001 &594605144
 PrefabInstance:
@@ -926,7 +926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 2
   startScale: 15
-  scaleMuliplier: 22
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1 &656358770
 GameObject:
@@ -1046,7 +1046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 6
   startScale: 15
-  scaleMuliplier: 22
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1001 &670584619
 PrefabInstance:
@@ -1199,7 +1199,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ed5f6b42c05828b4287f8eba25faba0f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 93f1285b719746a4b89639ed02e455c3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1324,7 +1324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 4
   startScale: 15
-  scaleMuliplier: 40
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1 &901448588 stripped
 GameObject:
@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 7
   startScale: 15
-  scaleMuliplier: 22
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1 &939650859
 GameObject:
@@ -2112,7 +2112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 0
   startScale: 15
-  scaleMuliplier: 45
+  scaleMuliplier: 30
   useBuffer: 1
 --- !u!1 &1471175510 stripped
 GameObject:
@@ -2143,7 +2143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 0
   startScale: 15
-  scaleMuliplier: 45
+  scaleMuliplier: 30
   useBuffer: 1
 --- !u!4 &1505816331 stripped
 Transform:
@@ -2164,7 +2164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 0
   startScale: 6
-  scaleMuliplier: 1
+  scaleMuliplier: 0.2
   useBuffer: 1
 --- !u!1001 &1591916671
 PrefabInstance:
@@ -2361,7 +2361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 1
   startScale: 15
-  scaleMuliplier: 22
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1 &1666902851 stripped
 GameObject:
@@ -2387,7 +2387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 0
   startScale: 8
-  scaleMuliplier: 1
+  scaleMuliplier: 0.2
   useBuffer: 1
 --- !u!1 &1732929850 stripped
 GameObject:
@@ -2413,7 +2413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 6
   startScale: 15
-  scaleMuliplier: 22
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1 &1759533980 stripped
 GameObject:
@@ -2439,7 +2439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 5
   startScale: 15
-  scaleMuliplier: 22
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1 &1940863650 stripped
 GameObject:
@@ -2465,7 +2465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 3
   startScale: 15
-  scaleMuliplier: 40
+  scaleMuliplier: 15
   useBuffer: 1
 --- !u!1001 &1953602716
 PrefabInstance:
@@ -2564,7 +2564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 0
   startScale: 6
-  scaleMuliplier: 1
+  scaleMuliplier: 0.2
   useBuffer: 1
 --- !u!4 &1970978200 stripped
 Transform:
@@ -2612,7 +2612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1def6f66c0e14e441ae570c89926bcc3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -658.75256
+      value: -640.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1def6f66c0e14e441ae570c89926bcc3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2681,7 +2681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1def6f66c0e14e441ae570c89926bcc3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -749
+      value: -769.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1def6f66c0e14e441ae570c89926bcc3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2749,5 +2749,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   band: 4
   startScale: 15
-  scaleMuliplier: 40
+  scaleMuliplier: 15
   useBuffer: 1

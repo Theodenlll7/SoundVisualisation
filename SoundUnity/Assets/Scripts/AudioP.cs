@@ -24,6 +24,10 @@ public class AudioP : MonoBehaviour
     private float[] equalLoudnessScale8 = new float[8];
 
 
+    //
+    public static float Amplitude, AmplitudeBuffer;
+    float AmplitudeHighest;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +50,25 @@ public class AudioP : MonoBehaviour
         if(useEqualLoudnessScale) equalLoudnessFilter();
         BandBuffer();
         CreateAudioBands();
+        GetAmplitude();
+    }
+
+    void GetAmplitude()
+    {
+        float CurrentAmplitude = 0;
+        float CurrentAmplitudeBuffer = 0;
+        for(int i = 0; i < 8; i++)
+        {
+            CurrentAmplitude += audioBand[i];
+            CurrentAmplitudeBuffer += audioBandbuffer[i];
+        }
+        if(CurrentAmplitude> AmplitudeHighest)
+        {
+            AmplitudeHighest = CurrentAmplitude;
+        }
+        Amplitude = CurrentAmplitude / AmplitudeHighest;
+
+        AmplitudeBuffer = CurrentAmplitudeBuffer / AmplitudeHighest;
     }
 
     void GetSpectrumAudioSource()

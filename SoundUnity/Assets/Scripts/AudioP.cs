@@ -175,6 +175,15 @@ public class AudioP : MonoBehaviour
         if (band != result.Length) result[band]=sum/count;
 
         //Normolize output
+        float max = 0;
+        foreach(float s in result)
+        {
+            if (max < s) max = s;
+        }
+        for(int i = 0; i < result.Length-1; i++)
+        {
+            result[i] /= max;
+        }
         return result;
     }
     void equalLoudnessFilter()

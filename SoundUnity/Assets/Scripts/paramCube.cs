@@ -21,9 +21,27 @@ public class paramCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float _scale = startScale;
         if (useBuffer)
         {
-            if((AudioP.bandbuffer[band] * scaleMuliplier) + startScale > maxScale)
+            _scale = AudioP.bandbuffer[band] * scaleMuliplier + startScale < maxScale ? AudioP.bandbuffer[band] * scaleMuliplier + startScale : maxScale;
+        }
+        else
+        {
+            _scale = AudioP.freqBand[band] * scaleMuliplier +startScale < maxScale ? AudioP.freqBand[band] * scaleMuliplier + startScale : maxScale;
+        }
+        Color _color = new Color();
+        if (uselightbuffer) _color = _scale < (maxScale / 4) ? 
+                new Color(AudioP.audioBandbuffer[band]/lightminimiser, AudioP.audioBandbuffer[band]/lightminimiser, AudioP.audioBandbuffer[band]/lightminimiser)
+                : new Color(AudioP.audioBandbuffer[band], AudioP.audioBandbuffer[band], AudioP.audioBandbuffer[band]);
+        else _color = new Color(AudioP.audioBand[band], AudioP.audioBand[band], AudioP.audioBand[band]);
+        transform.localScale = new Vector3(transform.localScale.x, _scale, transform.localScale.z);
+        _material.SetColor("_EmissionColor", _color);
+
+        /*
+        if (useBuffer)
+        {
+            if ((AudioP.bandbuffer[band] * scaleMuliplier) + startScale > maxScale)
             {
                 transform.localScale = new Vector3(transform.localScale.x, maxScale, transform.localScale.z);
 
@@ -49,19 +67,19 @@ public class paramCube : MonoBehaviour
                         _material.SetColor("_EmissionColor", _color);
                     }
                 }
-                if (!uselightbuffer)
+                else
                 {
                     transform.localScale = new Vector3(transform.localScale.x, (AudioP.bandbuffer[band] * scaleMuliplier) + startScale, transform.localScale.z);
 
                     Color _color = new Color(AudioP.audioBandbuffer[band], AudioP.audioBandbuffer[band], AudioP.audioBandbuffer[band]);
                     _material.SetColor("_EmissionColor", _color);
                 }
-  
+
 
             }
-    
+
         }
-        if(!useBuffer)
-        transform.localScale= new Vector3(transform.localScale.x, (AudioP.freqBand[band] * scaleMuliplier) + startScale, transform.localScale.z);
+        else
+            transform.localScale = new Vector3(transform.localScale.x, (AudioP.freqBand[band] * scaleMuliplier) + startScale, transform.localScale.z);*/
     }
 }

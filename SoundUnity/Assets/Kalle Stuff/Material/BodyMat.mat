@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: BodyMat
-  m_Shader: {fileID: -6465566751694194690, guid: 1fdee48dfe9a66d4bb06be5958d11d11, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 662f119f461b3b14f8ddf978adf4505d, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -90,7 +90,7 @@ Material:
     - _StartDensity: 10
     - _UVSec: 0
     - _ZWrite: 1
-    - _sizeY: 2.0989447
+    - _sizeY: 4.134805
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

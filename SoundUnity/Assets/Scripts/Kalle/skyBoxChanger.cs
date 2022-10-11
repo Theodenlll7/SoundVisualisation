@@ -8,6 +8,8 @@ public class skyBoxChanger : MonoBehaviour
     public int band;
     public float startScale, scaleMuliplier;
     public bool useBuffer;
+    public Animator animator;
+    public Animator animator1;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,18 +22,27 @@ public class skyBoxChanger : MonoBehaviour
     void Update()
     {
         if (useBuffer) {
-            if (AudioP.bandbuffer[band] * scaleMuliplier >= 4) { mat.SetFloat("_sizeY",15); }
-            mat.SetFloat("_sizeY", AudioP.bandbuffer[band] * scaleMuliplier);
            
-            
+            mat.SetFloat("_sizeY", AudioP.bandbuffer[band] * scaleMuliplier);
+            if (AudioP.bandbuffer[0] > AudioP.bandbuffer[6])
+            {
+                animator.SetBool("Bass", true);
+                animator1.SetBool("Bass", true);
+            }
+            else 
+            { 
+                animator.SetBool("Bass", false);
+                animator1.SetBool("Bass", false);
+
+            }
+
         }
         else
         {
-            if (AudioP.bandbuffer[band] * scaleMuliplier >= 4) { mat.SetFloat("_sizeY", 15); }
-            else { 
+           
             mat.SetFloat("_sizeY", AudioP.freqBand[band] * scaleMuliplier);
                 // mat.SetFloat("_sizeX,", AudioP.freqBand[band] * scaleMuliplier);
-            }
+            
 
         }
     }

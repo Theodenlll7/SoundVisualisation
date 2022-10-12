@@ -16,6 +16,7 @@ public class AudioP : MonoBehaviour
     float[] bufferdecrase = new float[8];
     public float changeRate = .5f;
 
+
     //Light
     float[] freqBandHighest = new float[8];
     public static float[] audioBand = new float[8];

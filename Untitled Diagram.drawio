@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-24T12:00:58.047Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="KthLXn00BxD5doeElzjQ" version="20.8.10" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-24T12:09:21.893Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="9Bi-W9jW8Th_fEd5nuCT" version="20.8.10" type="github">
   <diagram name="Page-1" id="mAXdeJ2Txdj3aJyrrYEm">
     <mxGraphModel dx="1434" dy="926" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -16,10 +16,10 @@
         <mxCell id="-DMaai7r8MjLLovcOKQn-4" value="Create&lt;br&gt;Particle System" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="90" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-DMaai7r8MjLLovcOKQn-5" value="Create&lt;br&gt;Particle System" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-DMaai7r8MjLLovcOKQn-5" value="Update&lt;br&gt;Particle System" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="220" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="-DMaai7r8MjLLovcOKQn-6" value="Create&lt;br&gt;Particle System" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="-DMaai7r8MjLLovcOKQn-6" value="Fetch Current&lt;br&gt;Positions" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="360" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="-DMaai7r8MjLLovcOKQn-12" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="-DMaai7r8MjLLovcOKQn-5">
@@ -38,6 +38,39 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="150" y="260" as="sourcePoint" />
             <mxPoint x="200" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-DMaai7r8MjLLovcOKQn-15" value="Create&lt;br&gt;Emitor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="416.25" y="80" width="97.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-DMaai7r8MjLLovcOKQn-16" value="Create&lt;br&gt;Effects" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="140" width="97.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-DMaai7r8MjLLovcOKQn-18" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="-DMaai7r8MjLLovcOKQn-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="120" as="sourcePoint" />
+            <mxPoint x="420" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-DMaai7r8MjLLovcOKQn-19" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="-DMaai7r8MjLLovcOKQn-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="362.5" y="150" as="sourcePoint" />
+            <mxPoint x="412.5" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-DMaai7r8MjLLovcOKQn-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-DMaai7r8MjLLovcOKQn-20" target="-DMaai7r8MjLLovcOKQn-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-DMaai7r8MjLLovcOKQn-20" value="Euler Approximate&lt;br&gt;each frame" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="210" width="97.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-DMaai7r8MjLLovcOKQn-22" value="Update particle&amp;nbsp;&lt;br&gt;positions" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="210" width="97.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-DMaai7r8MjLLovcOKQn-23" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="-DMaai7r8MjLLovcOKQn-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="366.25" y="250" as="sourcePoint" />
+            <mxPoint x="416.25" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-24T08:29:07.060Z" agent="5.0 (Windows)" etag="9bZhYnszESMrA9to51Vl" version="20.8.20" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-24T08:32:19.198Z" agent="5.0 (Windows)" etag="OXqzmgglYQio9NPV9WuP" version="20.8.20" type="github">
   <diagram name="Page-1" id="mAXdeJ2Txdj3aJyrrYEm">
     <mxGraphModel dx="1434" dy="781" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -236,7 +236,7 @@
         </mxCell>
         <mxCell id="-DMaai7r8MjLLovcOKQn-189" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=5;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="2650" as="sourcePoint" />
+            <mxPoint x="400" y="2720" as="sourcePoint" />
             <mxPoint x="400" y="2320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
@@ -262,16 +262,16 @@
           <mxGeometry y="98" width="380" height="82" as="geometry" />
         </mxCell>
         <mxCell id="TMPoqhxUjDYgHP8CK_e2-6" value="Particle" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="630" y="3370" width="150" height="150" as="geometry" />
+          <mxGeometry x="630" y="3370" width="180" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="TMPoqhxUjDYgHP8CK_e2-7" value="-velocity: vec2()&#xa;-position: vec2&#xa;-color: vec4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TMPoqhxUjDYgHP8CK_e2-6" vertex="1">
-          <mxGeometry y="26" width="150" height="64" as="geometry" />
+        <mxCell id="TMPoqhxUjDYgHP8CK_e2-7" value="-velocity: vec2()&#xa;-position: vec2&#xa;-color: vec4&#xa;-lifetime : float&#xa;-size : float&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TMPoqhxUjDYgHP8CK_e2-6" vertex="1">
+          <mxGeometry y="26" width="180" height="84" as="geometry" />
         </mxCell>
         <mxCell id="TMPoqhxUjDYgHP8CK_e2-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="TMPoqhxUjDYgHP8CK_e2-6" vertex="1">
-          <mxGeometry y="90" width="150" height="8" as="geometry" />
+          <mxGeometry y="110" width="180" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="TMPoqhxUjDYgHP8CK_e2-9" value="+getPosition()&#xa;+getVelocity" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TMPoqhxUjDYgHP8CK_e2-6" vertex="1">
-          <mxGeometry y="98" width="150" height="52" as="geometry" />
+        <mxCell id="TMPoqhxUjDYgHP8CK_e2-9" value="+getPosition&#xa;+getVelocity&#xa;+getSize&#xa;+UpdatePosition(vec2, float)&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="TMPoqhxUjDYgHP8CK_e2-6" vertex="1">
+          <mxGeometry y="118" width="180" height="82" as="geometry" />
         </mxCell>
         <mxCell id="TMPoqhxUjDYgHP8CK_e2-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="TMPoqhxUjDYgHP8CK_e2-10" target="TMPoqhxUjDYgHP8CK_e2-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -380,7 +380,10 @@
         <mxCell id="YQ-TBbY5P4pKSXDUXHZ6-10" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="490" y="2570" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="YQ-TBbY5P4pKSXDUXHZ6-13" value="Update Paricle Position" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="YQ-TBbY5P4pKSXDUXHZ6-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YQ-TBbY5P4pKSXDUXHZ6-13" target="YQ-TBbY5P4pKSXDUXHZ6-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YQ-TBbY5P4pKSXDUXHZ6-13" value="Apply Force" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="2650" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YQ-TBbY5P4pKSXDUXHZ6-15" value="Delete Particle" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -407,6 +410,18 @@
         </mxCell>
         <mxCell id="YQ-TBbY5P4pKSXDUXHZ6-23" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};rotation=90;fillColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="560" y="1730" width="10" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="YQ-TBbY5P4pKSXDUXHZ6-28" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="2720" as="sourcePoint" />
+            <mxPoint x="750.75" y="2330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YQ-TBbY5P4pKSXDUXHZ6-29" value="Particle " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="845" y="2310" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YQ-TBbY5P4pKSXDUXHZ6-30" value="Update Paricle Position" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="2650" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
